@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mhcparticleaddon",
+	"version": "${version}" ,
+	"name": "My Hero Craftademia Particle Addon",
+	"description": "RGB Particles",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mhcparticleaddon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.stella.mhcparticleaddon.MhcParticleAddon"
+		],
+		"fabric-datagen": [
+			"me.stella.mhcparticleaddon.MhcParticleAddonDataGenerator"
+		],
+		"client": [
+			"me.stella.mhcparticleaddon.MhcParticleAddonClient"
+		]
+	},
+	"mixins": [
+		"mhcparticleaddon.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
